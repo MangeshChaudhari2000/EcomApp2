@@ -1,9 +1,18 @@
 {
     "Products": [
         {
+            "prod_id":1,
             "name": "Smartphone",
             "description": "High-end smartphone with advanced features.",
             "price": 599.99,
+            "image": "https://example.com/images/smartphone.jpg",
+            "rating": 4.5
+          },
+                {
+            "prod_id":2,
+            "name": "Fridge",
+            "description": "High-end smartphone with advanced features.",
+            "price": 111.99,
             "image": "https://example.com/images/smartphone.jpg",
             "rating": 4.5
           }
