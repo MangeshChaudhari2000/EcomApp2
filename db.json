@@ -1,9 +1,14 @@
-[
-    {
-      "name": "Smartphone",
-      "description": "High-end smartphone with advanced features.",
-      "price": 599.99,
-      "image": "https://example.com/images/smartphone.jpg",
-      "rating": 4.5
-    }
-  ]
+{
+    "Products": [
+        {
+            "name": "Smartphone",
+            "description": "High-end smartphone with advanced features.",
+            "price": 599.99,
+            "image": "https://example.com/images/smartphone.jpg",
+            "rating": 4.5
+          }
+    ]
+   
+  }
+  
+
