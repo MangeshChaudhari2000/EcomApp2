@@ -124,6 +124,7 @@ const productSlice = createSlice({
             const index1 = state.products.findIndex((data) => data.id === productData.id);
             console.log("productData index insie updateProduct: " + index1);
             state.products[index1] = productData;
+
         },
         addProduct: (state, action) => {
             state.products.push(action.payload)
@@ -155,7 +156,11 @@ const productSlice = createSlice({
             })
             .addCase(HandleGetProducts.fulfilled, (state, action) => {
                 state.loading = false;
-                state.products = action.payload;
+                if (state.products.length===0) {
+                    state.products = action.payload;
+                } else {
+                    state.products = state.products
+                }
             })
             .addCase(HandleGetProducts.rejected, (state, action) => {
                 state.loading = false;
