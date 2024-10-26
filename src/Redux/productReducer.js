@@ -120,8 +120,10 @@ const productSlice = createSlice({
         updateProduct: (state, action) => {
             const { productData, index } = action.payload; // Destructure productData and index from action.payload
             state.loading = false;
-            console.log("productData insie updateProduct: " + productData);
-            state.products[index] = productData;
+            // state.products[index] = productData;
+            const index1 = state.products.findIndex((data) => data.id === productData.id);
+            console.log("productData index insie updateProduct: " + index1);
+            state.products[index1] = productData;
         },
         addProduct: (state, action) => {
             state.products.push(action.payload)
